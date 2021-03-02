@@ -1,14 +1,19 @@
 {
   "name": "vue-test",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --dest ./api/views",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18",
+    "socket.io": "^3.1.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -16,8 +21,10 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "debug": "^4.3.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "socket.io-client": "^3.1.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
